@@ -1,0 +1,50 @@
+.showcase {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10%;
+
+  .floatingCont img {
+    width: 58%;
+    min-height: 15rem;
+  }
+  .floatingImg2 .floatingCont img {
+    width: 44%;
+  }
+  .floatingImg1 .floatingCont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .floatingImg2 .floatingCont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .floatingImg1,
+  .floatingImg2 {
+    overflow: hidden;
+  }
+  .floatingImg2 {
+    transform: translate(2%, -30%);
+  }
+  .text-scroll {
+    position: absolute;
+    bottom: 40%;
+    left: 0%;
+    transform: translate(150%, 10%);
+    font-size: 6.5rem;
+    transition: 0.1s ease !important;
+  }
+
+  .scroll-text1 {
+    z-index: -1;
+  }
+  .scroll-text2 {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px white;
+    z-index: 2;
+  }
+  .helperText-scroll {
+    position: relative;
+  }
+}

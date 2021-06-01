@@ -1,0 +1,47 @@
+.aboutUs {
+  min-height: 87vh;
+  width: 86%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  .lineSvg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 2;
+    top: 0;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+  }
+  .heroImg .div {
+    z-index: 3;
+    position: relative;
+  }
+  .intro-text {
+    font-size: calc(1.8rem + 1vw);
+    flex: 1 1 4rem;
+    transform: translateY(-12%);
+    .hide {
+      overflow: hidden;
+    }
+  }
+  .highlightedAbout {
+    color: #e97900;
+  }
+}
+.heroImg {
+  flex: 1;
+  overflow: hidden;
+  img {
+    width: 90%;
+  }
+}
+
+.helper {
+  position: static !important;
+}
